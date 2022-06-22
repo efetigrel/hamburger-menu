@@ -1,71 +1,78 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-  margin: auto;
-  background-color: #555;
-  color: white;
-  border-radius: 10px;
+    margin: auto;
+    background: url("img/bg.jpeg") no-repeat center right/cover;
+    color: white;
+    height: 100vh;
+}
+
+.main-nav__logo {
+    width: 70px;
+    padding: 10px;
 }
 
 .topnav {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 
 .topnav #myLinks {
-  display: flex;
+    display: flex;
 }
 
 .topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
+    color: white;
+    padding: 25.9px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .topnav a.icon {
-  background: black;
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
+    background: white;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a.icon:last-child {
+    background: black;
+}
+
+.topnav a.icon:last-child:hover {
+    background: white;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #04aa6d;
-  color: white;
+    color: black;
 }
 
 @media (max-width: 768px) {
-  .topnav {
-    display: block;
-  }
+    .topnav {
+        display: block;
+    }
 
-  .topnav #myLinks {
-    display: none;
-  }
+    .topnav #myLinks {
+        display: none;
+    }
 
-  .topnav a {
-    display: block;
-  }
+    .topnav a {
+        display: block;
+    }
 
-  .topnav a.icon {
-    display: block;
-  }
-}/*# sourceMappingURL=main.css.map */
+    .topnav a.icon {
+        display: block;
+    }
+} /*# sourceMappingURL=main.css.map */
